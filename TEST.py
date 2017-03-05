@@ -7,7 +7,7 @@ import csv
 def GetWordNums(text):
 	g=open(text,'r')
 	num=0
-	for i in g.readlines():
+	for i in g.readlines():dsadsadsadsadd
 		for j in i:
 			if j in 'GAVLIFWYDHNEKQMRSTCP':
 				num=num +1
