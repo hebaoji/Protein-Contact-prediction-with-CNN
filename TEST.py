@@ -1,32 +1,33 @@
-#!/usr/bin/pythonfdsafdsa
-import osfds
+#!/usr/bin/python
+import os
 import shutil
 import numpy as np
-import csvf
+import csv
 #####################################################
 def GetWordNums(text):
 	g=open(text,'r')
-	num=0fsfdsaffds
-		for j in i:dsa
+	num=0
+	for i in g.readlines():
+		for j in i:
 			if j in 'GAVLIFWYDHNEKQMRSTCP':
-				num=num +1dsaf
-	g.close()dsf
+				num=num +1
+	g.close()
 	return num
 
-fdsa
+
 ######################################################
-f=open('name.dat','r')dsf
+f=open('name.dat','r')
 namelist=list()
 for line in f.readlines():
-	line=line.strip()dsaf
-	namelist=line.split()dsf
-f.close()dsaf
+	line=line.strip()
+	namelist=line.split()
+f.close()
 currentdir=os.getcwd()
-prenamelist=['betacon','metapsicov','nnbayesb','nnbayes','psicov','spcondsaf,'svmcon','svmseq','ccmpred','bayes','freecontact']
+prenamelist=['betacon','metapsicov','nnbayesb','nnbayes','psicov','spcon','svmcon','svmseq','ccmpred','bayes','freecontact']
 ranglist=['SHORT','MEDIUM','LONG']
 tmp=list()
-for line in namelist:dsa
-	name=currentdir+'/../517/'+linefdsa
+for line in namelist:
+	name=currentdir+'/../517/'+line
 	os.chdir(name)
 	length=GetWordNums('protein.seq')
 	tmp.append(length)
